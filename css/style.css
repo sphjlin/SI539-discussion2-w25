@@ -1,0 +1,33 @@
+.grid {
+
+}
+
+.grid img {
+    grid-column: 1/span 1;
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.grid img:nth-child(even) {
+    border: 5px dashed orange;
+}
+
+.grid img:first-child {
+    border: 5px solid green;
+}
+.grid img:last-child {
+    grid-column: span 3;
+}
+
+img:hover{
+    box-shadow:10px 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* For tablets */
+@media all and (min-width: 600px) {
+}
+/* For desktop */
+@media all and (min-width: 768px) {
+}
