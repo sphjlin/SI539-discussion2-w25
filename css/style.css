@@ -1,7 +1,7 @@
-.grid {
-
+.grid{
+    display: grid;
+    grid-template-columns:2% 3% 90% 3% 2%;
 }
-
 .grid img {
     grid-column: 1/span 1;
     width:100%;
@@ -25,9 +25,15 @@ img:hover{
     transition: box-shadow 0.3s ease;
 }
 
-/* For tablets */
-@media all and (min-width: 600px) {
-}
-/* For desktop */
-@media all and (min-width: 768px) {
+@media all and (min-width: 750px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 2% 44% 4% 44% 2%;
+    }
+    .grid img:nthchild(odd){
+        grid-column: 2/ span 1;
+    }
+    .grid img:nthchild(even){
+        grid-column: 4/ span 1;
+    }
 }
