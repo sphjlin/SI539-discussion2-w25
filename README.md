@@ -1,1 +1,1 @@
-# wk6_w25
+# discussion 2 and discussion 5 for SI539
